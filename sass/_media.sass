@@ -1,0 +1,98 @@
+$w: 50px
+$h: 4px
+$menu_color: #000
+
+@media screen and (max-width: 740px)
+	.center
+		width: 90%
+	header
+		nav 
+			ul
+				width: $w
+				height: $w
+				background-color: #fff
+				border-radius: 8px
+				margin-top: 15px
+				margin-right: 20px
+
+
+				&:hover
+					cursor: pointer
+
+				.top
+					width: $w
+					height: $h
+					position: relative
+					top: -$h*4
+					background-color: $menu_color
+					border-radius: 4px
+					transition: 1s
+				.mid
+					position: relative
+					top: -$h*9
+					width: $w
+					height: $h
+					background-color: $menu_color
+					border-radius: 4px
+					transition: 1s
+
+				.bot
+					position: relative
+					top: -$h*14
+					width: $w
+					height: $h
+					background-color: $menu_color
+					border-radius: 4px
+					transition: 0.5s
+
+			.active
+				.top
+					top: 0px
+					transform: rotate(135deg)
+				.mid
+					top: -34px
+					transform: rotate(-135deg)
+				.bot
+					opacity: 0
+					top: 0
+					transform: rotate(180deg)	 	
+			li
+				a
+					display: none			
+	.news
+		.center
+			.container
+				div
+					width: 100%
+					height: 100%
+					
+
+					img
+						width: 100%
+						height: 200px
+					h3
+						padding-top: 20px	
+	.contact
+		height: 700px
+		.center
+			div
+				display: block		
+				width: 100%	
+			.right
+				float: left	
+				width: 100%
+				input
+					width: 100%
+			button
+				margin-left: 20%
+	.products
+		.center
+			div
+				width: 100%
+				margin-top: 30px
+			.sprites_1
+				margin-left: 0	
+	.news
+		.center	
+			.newspost_4, .newspost_5, .newspost_6
+				display: none 		

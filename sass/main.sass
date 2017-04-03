@@ -1,0 +1,304 @@
+@import "bourbon"
+@import "fonts"
+
+
+$main_color: #188cef
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+
+body
+	width: 100%
+	height: 100%
+	font-family: RobotoBold
+
+	
+.hidden
+	display: none	
+.block
+	display: block	
+
+
+.center
+	width: 80%
+	height: 100%
+	margin: auto
+
+header
+	nav
+		width: 100%
+		height: 80px
+		position: fixed
+		background-color: #fff
+		top: 0
+		z-index: 101
+		.logo
+			float: left
+			width: 55px
+			margin-left: 30px
+			margin-top: 20px
+		ul
+			float: right
+			li
+				display: inline-block	
+				margin-top: 25px
+				a
+					font-family: RobotoRegular
+					text-decoration: none
+					text-transform: uppercase
+					color: #515151
+					margin-right: 40px
+					font-size: 14px
+					font-weight: bold
+					transition: 0.1s 
+					&:hover
+						border-bottom: 2px solid #000 
+	
+	.main
+		width: 100%
+		height: 475px
+		background-image: url('../img/head.jpg')	
+		background-repeat: no-repeat
+		background-size: 1350px 600px
+		background-position: 100% -100px			
+		.center
+			position: relative
+			h1
+				font-family: RobotoBold
+				font-size: 56px
+				color: #fff
+				display: block
+				padding-top: 130px
+			h3
+				font-family: RobotoMedium
+				font-size: 18px
+				color: #cbcbca
+				text-transform: uppercase
+				display: block
+				margin-top: 30px
+			button
+				width: 135px
+				height: 40px
+				color: #fff	
+				background-color: $main_color
+				border-radius: 20px
+				margin-top: 35px
+				font-family: RobotoMedium
+				transition: 0.2s
+				&:hover
+					cursor: pointer
+					font-size: 15px
+					 
+.products	
+	background-color: #f2f2f2
+	padding-bottom: 120px
+	.center
+		h2
+			font-family: RobotoBold
+			font-size: 46px
+			display: block
+			padding-top: 100px
+			margin-bottom: 60px
+			color: #252525 
+		.sprites_1
+				margin-left: 5%	
+		div
+			display: inline-block
+			width: 25%
+			height: 300px	
+			background-color: #fff		
+			margin-right: 5%
+			text-align: center
+			box-shadow: 0 0 5px rgba(100,103,102,0.5);	
+			div
+				width: 135px
+				height: 110px
+				display: block
+				margin: auto
+				margin-top: 40px	
+				box-shadow: none		
+			.first
+				background-image: url('../img/sprites.png')
+				background-repeat: no-repeat
+				background-size: 900px
+				background-position: 25px 0px	
+			.second	
+				background-image: url('../img/sprites.png')
+				background-repeat: no-repeat
+				background-size: 900px
+				background-position: -380px 0px	
+			.third
+				background-image: url('../img/sprites.png')
+				background-repeat: no-repeat
+				background-size: 900px
+				background-position: -790px 0px		
+			span
+				display: block
+				margin-top: 30px	
+				margin-bottom: 30px
+			button
+				width: 110px
+				height: 36px
+				border: 2px solid $main_color
+				border-radius: 20px
+				color: $main_color
+				background-color: #fff	
+				font-family: RobotoMedium
+				font-size: 15px
+				cursor: pointer
+				transition: 0.1s
+				&:hover
+					font-size: 16px
+.advert
+	width: 100%
+	height: 100%
+	padding-bottom: 9%
+	background-image: url('../img/main.jpg')
+	background-repeat: no-repeat
+	background-size: 1350px 100%
+	background-position: 0px
+	text-align: center
+	.center
+		h2
+			display: block
+			padding-top: 140px
+			color: #fff
+			padding-bottom: 40px
+			font-family: RobotoBold
+			font-size: 42px
+		span
+			color: #cccbca
+			font-family: RobotoLight
+			font-size: 22px
+.news
+	height: 100%
+	background-color: #fff
+	.center
+		h2
+			display: block
+			padding-top: 80px
+			padding-bottom: 40px
+			font-family: RobotoBold
+			font-size: 46px
+		.container
+			display: flex
+			justify-content: space-around;
+			flex-flow: row wrap;
+			font-family: RobotoMedium
+			font-size: 16px
+			.viewall
+				display: block
+				width: 200px
+				height: 50px
+				margin-top: 40px
+				margin-left: 50px
+				border: 2px solid $main_color
+				border-radius: 20px
+				color: $main_color
+				background-color: #fff
+				cursor: pointer
+				transition: 0.1s
+				&:hover
+					font-size: 15px
+			div
+				width: 250px
+				height: 300px
+				box-shadow: 0 0 5px rgba(100,103,102,0.5);
+				border-radius: 5px
+				margin-top: 10px
+				img
+					border-radius: 5px
+				h3
+					display: block
+					height: 115px
+					margin-right: 5px
+					margin-left: 15px	
+				a
+					margin-left: 15px
+					text-decoration: none
+					color: $main_color
+					&:hover
+						border-bottom: 1px solid $main-color
+.contact
+	width: 100%
+	height: 500px
+	background-color: #fff
+	color: #000
+	.center
+		h2
+			display: block
+			padding-top: 120px
+			padding-bottom: 30px
+			font-family: RobotoBold
+			font-size: 46px
+		div
+			float: left
+			span
+				display: block
+				margin-top: 20px
+				font-family: RobotoRegular
+				font-size: 10px
+				color: #808080
+				text-transform: uppercase
+			p
+				font-family: RobotoRegular
+				font-size: 16px	
+		form
+			float: right	
+			span		
+				display: block
+				margin-top: 25px
+				margin-bottom: 5px
+				font-family: RobotoRegular
+				font-size: 10px
+				color: #808080
+				text-transform: uppercase
+			input
+				width: 290px
+				height: 35px
+				border: 1px solid #cccbca
+				border-radius: 100px	
+			button
+				display: block
+				margin-top: 20px
+				width: 290px
+				height: 35px
+				border-radius: 100px
+				background-color: $main_color
+				color: #fff	
+				font-family: RobotoMedium
+				transition: 0.1s
+				cursor: pointer
+				&:hover
+					font-size: 14px
+footer
+	width: 100%
+	height: 75px
+	display: block
+	background-color: #f2f2f2				
+	.left
+		float: left
+		span
+			display: inline-block
+			color:#808080
+			margin-left: 40px
+			margin-top: 25px
+			font-family: RobotoLight
+			font-size: 14px
+	.right
+		float: right
+		font-family: RobotoRegular
+		margin-top: 25px
+		font-size: 14px
+		a
+			display: inline-block
+			margin-right: 20px
+			color: $main_color
+		span
+			display: inline-block
+			margin-right: 20px	
+
+
+@import "media"
